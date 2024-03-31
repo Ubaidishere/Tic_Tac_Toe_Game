@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="unleash_your_strategic_prowess">Unleash your strategic prowess!</string>
+    <string name="offline_multiplayer_Tic_Tac_Toe">Offline multiplayer Of Tic Tac Toe</string>
+    <string name="enter_player_names">Enter Player Names</string>
+    <string name="first_player_name">First Player Name:</string>
+    <string name="second_player_name">Second Player Name:</string>
+    <string name="start_game">Start Game</string>
+    <string name="player_one">Player one</string>
+    <string name="player_two">Player Two</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="new_game">New Game</string>
+    <string name="exit_app">Exit App</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="x_or_o">X or O</string>
+</resources>

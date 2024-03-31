@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameUI"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/playersnamebackcolor"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/playerone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/player_one"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/logox"
+                android:layout_gravity="center"
+                android:text="@string/x"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/Red"
+                android:fontFamily="casual"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/playersnamebackcolor"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/playertwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/player_two"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/o"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/Yellow"
+                android:fontFamily="casual"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:gravity="center">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn1"
+            android:background="@drawable/box"
+            android:contentDescription="@string/x_or_o"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:fontFamily="casual"
+            android:paddingTop="20dp"
+            android:onClick="check"
+            android:tag="1"
+            android:text=""
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn2"
+            android:contentDescription="@string/x_or_o"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:fontFamily="casual"
+            android:background="@drawable/box"
+            android:paddingTop="20dp"
+            android:textStyle="bold"
+            android:onClick="check"
+            android:tag="2"
+            android:text=""
+            android:textSize="50sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:fontFamily="casual"
+            android:paddingTop="20dp"
+            android:contentDescription="@string/x_or_o"
+            android:background="@drawable/box"
+            android:textStyle="bold"
+            android:tag="3"
+            android:text=""
+            android:onClick="check"
+            android:textSize="50sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:contentDescription="@string/x_or_o"
+            android:fontFamily="casual"
+            android:background="@drawable/box"
+            android:paddingTop="10dp"
+            android:onClick="check"
+            android:textStyle="bold"
+            android:tag="4"
+            android:text=""
+            android:textSize="50sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@drawable/box"
+            android:tag="5"
+            android:textStyle="bold"
+            android:text=""
+            android:contentDescription="@string/x_or_o"
+            android:fontFamily="casual"
+            android:paddingTop="20dp"
+            android:onClick="check"
+            android:textSize="50sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:tag="6"
+            android:contentDescription="@string/x_or_o"
+            android:background="@drawable/box"
+            android:text=""
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:paddingTop="20dp"
+            android:onClick="check"
+            android:textSize="50sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/x_or_o"
+            android:onClick="check"
+            android:background="@drawable/box"
+            android:fontFamily="casual"
+            android:paddingTop="20dp"
+            android:tag="7"
+            android:text=""
+            android:textSize="50sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:onClick="check"
+            android:textStyle="bold"
+            android:contentDescription="@string/x_or_o"
+            android:background="@drawable/box"
+            android:tag="8"
+            android:fontFamily="casual"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textSize="50sp" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:tag="9"
+            android:textStyle="bold"
+            android:background="@drawable/box"
+            android:contentDescription="@string/x_or_o"
+            android:fontFamily="casual"
+            android:paddingTop="20dp"
+            android:text=""
+            android:onClick="check"
+            android:textSize="50sp" />
+
+    </GridLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:layout_width="200dp"
+            android:id="@+id/newgame"
+            android:layout_height="60dp"
+            android:textColor="@color/backgroundcolor"
+            android:background="@drawable/startbuttoncolor"
+            android:text="@string/new_game"/>
+    </LinearLayout>
+
+
+</LinearLayout>
